@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Виталий Васильев](https://up.htmlacademy.ru/htmlcss/33/user/1898375).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
