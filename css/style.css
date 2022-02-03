@@ -22,18 +22,44 @@
 	font-display: swap;
 }
 
+/* GLOBAL VALUES */
+
 body {
 	font-family: "Inter","sans-serif";
 	font-style: normal;
 	font-size: 16px;
 	line-height: 22px;
-	color: #2D3440;
+	color: #565C66;
 	background: #FEAFC3;
 }
 
 .global-list {
 	list-style: none;
 }
+
+.main-style-button	{
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #2D3440;
+	text-decoration: none;
+  background-color: #FCFCFC;
+}
+
+.second-style-button {
+  font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FCFCFC;
+	text-decoration: none;
+  background-color: #FF2F64;
+}
+
+/* MAIN HEADER */
 
 .navigation-button {
 	line-height: 20px;
@@ -58,31 +84,189 @@ body {
 	text-decoration: none;
 
 }
+/* ICE CREAM CAROUSEL*/
 
 .ice-cream-name {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 46px;
+  color: #2D3440;
 }
 
 .ice-cream-description {
 	font-size: 18px;
 	line-height: 24px;
+  color: #2D3440;
 
 }
 
-.main-style-button	{
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 20px;
-	color: #2D3440;
-	text-decoration: none;
+
+/* SHOP GIFTS */
+
+.motivational-call {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
 }
+
 .gift-item {
 	width: 570px;
 	height: 268px;
-	background: #FF4A78;
+	background-color: #FF7799;
 	border-radius: 16px;
+}
+
+.gift-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-description {
+  color: #2D3440;
+}
+
+/* SHOP POPULAR ITEMS (CATALOG CARDS)*/
+
+.ice-cream-item-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.ice-cream-ball {
+  border-radius: 50%;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+/*SHOP BENEFITS*/
+
+.shop-benefits {
+  width: 1170px;
+  height: 480px;
+  background-image: url("../images/backgrounds/waffle-field.jpg");
+  border-radius: 16px;
+}
+
+.benefits-wrapper {
+  width: 1122px;
+  height: 432px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.benefit-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+}
+
+/*BLOG AND SUBSCRIPTION*/
+
+.blog {
+  width: 570px;
+  height: 220px;
+  background-image: url("../images/backgrounds/blog-field.jpg");
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.blog-news {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.subscription {
+  width: 570px;
+  height: 220px;
+  background-image: url("../images/backgrounds/post-field.jpg");
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.subscription-wrapper {
+  width: 558px;
+  height: 208px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.subscription-description {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*SHOP DELIVERY*/
+
+.delivery {
+  width: 1170px;
+  height: 534px;
+  background-image: url("../images/backgrounds/delivery-field.jpg");
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.delivery-title{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-field-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+/*SHOP REQUISITES*/
+
+.shop-requisites {
+  width: 1170px;
+  height: 492px;
+  background-image: url("../images/backgrounds/requisites-field.jpg");
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.adress-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+/*MAIN FOOTER*/
+
+.footer-link {
+  font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #2D3440;
+	text-decoration: none;
+}
+
+.developer-link {
+  color: #2D3440;
 }
