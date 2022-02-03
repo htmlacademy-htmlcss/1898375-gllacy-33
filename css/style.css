@@ -44,8 +44,11 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	color: #2D3440;
+  border-radius: 26px;
+  border: 4px solid #FCFCFC;
+  text-align: center;
 	text-decoration: none;
-  background-color: #FCFCFC;
+  background-color: #FFCBD8;
 }
 
 .second-style-button {
@@ -55,8 +58,11 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	color: #FCFCFC;
+  border-radius: 26px;
+  border: 4px solid  #FFCBD8 ;
 	text-decoration: none;
   background-color: #FF2F64;
+  
 }
 
 /* MAIN HEADER */
@@ -269,4 +275,63 @@ body {
 
 .developer-link {
   color: #2D3440;
+}
+
+/*CATALOG HEADER*/
+
+.navigation-button-current {
+  border-radius: 26px;
+  background-color: #FF4A78;
+}
+
+.inner-page-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+
+.breadcrumb-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  text-decoration: none;
+}
+
+/*CATALOG FILTERS*/
+
+.catalog-filters, .filter-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.filters-button {
+  width: 187px;
+  height: 36px;
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+}
+
+/*CATALOG*/
+
+.pagination-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
 }
