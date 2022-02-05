@@ -1,6 +1,5 @@
 @font-face {
 	font-family: "Inter";
-	font-style: normal;
 	font-weight: 400;
 	src: url("../fonts/inter-400.woff2") format("woff2");
 	font-display: swap;
@@ -8,7 +7,6 @@
 
 @font-face {
 	font-family: "Inter";
-	font-style: normal;
 	font-weight: 700;
 	src: url("../fonts/inter-700.woff2") format("woff2");
 	font-display: swap;
@@ -16,7 +14,6 @@
 
 @font-face {
 	font-family: "Inter";
-	font-style: normal;
 	font-weight: 900;
 	src: url("../fonts/inter-900.woff2") format("woff2");
 	font-display: swap;
@@ -25,8 +22,7 @@
 /* GLOBAL VALUES */
 
 body {
-	font-family: "Inter","sans-serif";
-	font-style: normal;
+	font-family: "Inter", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	color: #565C66;
@@ -38,8 +34,6 @@ body {
 }
 
 .main-style-button	{
-	font-family: "Inter";
-	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -52,8 +46,6 @@ body {
 }
 
 .second-style-button {
-  font-family: "Inter";
-	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -119,7 +111,6 @@ body {
 
 .gift-item {
 	width: 570px;
-	height: 268px;
 	background-color: #FF7799;
 	border-radius: 16px;
 }
@@ -128,6 +119,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  color: #2D3440;
 }
 
 .gift-description {
@@ -158,14 +150,13 @@ body {
 
 .shop-benefits {
   width: 1170px;
-  height: 480px;
   background-image: url("../images/backgrounds/waffle-field.jpg");
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
 .benefits-wrapper {
   width: 1122px;
-  height: 432px;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
@@ -212,7 +203,6 @@ body {
 
 .subscription-wrapper {
   width: 558px;
-  height: 208px;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
@@ -225,7 +215,6 @@ body {
 
 .delivery {
   width: 1170px;
-  height: 534px;
   background-image: url("../images/backgrounds/delivery-field.jpg");
   background-color: #FCFCFC;
   border-radius: 16px;
@@ -249,7 +238,6 @@ body {
 
 .shop-requisites {
   width: 1170px;
-  height: 492px;
   background-image: url("../images/backgrounds/requisites-field.jpg");
   background-color: #FCFCFC;
   border-radius: 16px;
