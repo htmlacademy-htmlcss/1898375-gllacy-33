@@ -63,7 +63,7 @@ body {
   border: 4px solid  #FFCBD8 ;
 	text-decoration: none;
   background-color: #FF2F64;
-  
+
 }
 
 .visually-hidden {
@@ -173,12 +173,12 @@ body {
 .socials-list {
   display: flex;
   padding: 0;
-  margin-right: 16px;
+
 }
 
-/* .socials-list:not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 16px;
-} */
+}
 
 .ice-cream-name {
 	font-weight: 700;
@@ -267,7 +267,8 @@ body {
   padding: 0;
 }
 
-.popular-item {
+.popular-item,
+.ice-cream-catalog-item {
   width: 270px;
   display: flex;
   flex-direction: column;
@@ -455,15 +456,28 @@ body {
   padding-left: 14px;
   padding-right: 14px;
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .footer-list {
-  width: 356px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 120px;
+  margin-left: 299px;
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+}
+
+.footer-item:first-child {
+  list-style-image: url("../images/icons/heart-icon.svg");
+  margin-right: 24px;
+}
+
+.footer-item:nth-child(3) {
+  margin-right: 32px;
+}
+
+.about-developer {
+  white-space: nowrap;
 }
 
 .who-did-description {
@@ -497,6 +511,18 @@ body {
 }
 
 
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+
+.breadcrumb-item:not(:last-child) {
+  margin-right: 28px;
+}
+
 .breadcrumb-link {
   font-weight: 700;
   font-size: 14px;
@@ -518,6 +544,43 @@ body {
   color: #2D3440;
 }
 
+.field-border-off {
+  border: none;
+  padding: 0;
+  margin-right: 26px;
+}
+
+.catalog-filter-form {
+  width: 807px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.radio-filter {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-filter {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fat-list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.fillers-list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+
 .filters-button {
   width: 187px;
   height: 36px;
@@ -529,6 +592,7 @@ body {
   line-height: 20px;
   text-align: center;
   color: #2D3440;
+  align-self: flex-end;
 }
 
 /*CATALOG*/
@@ -539,4 +603,17 @@ body {
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
+}
+
+
+.ice-cream-catalog-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.catalog-pagination {
+  display: flex;
+  justify-content: flex-end;
 }
