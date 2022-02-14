@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
 	font-family: "Inter", sans-serif;
+  font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	color: #565C66;
@@ -82,11 +83,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.blog-and-subscription-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 
 /* MAIN HEADER */
@@ -365,18 +361,14 @@ body {
 /*SHOP BENEFITS*/
 
 .shop-benefits {
-  width: 1170px;
-  box-sizing: border-box;
-  display: flex;
   margin-bottom: 80px;
-  padding: 24px;
+  padding: 20px;
   background-image: url("../images/backgrounds/waffle-field.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
 }
 
 .benefits-wrapper {
-  /* width: 1122px; */
   background-color: #FCFCFC;
   border-radius: 16px;
   padding-top: 56px;
@@ -386,7 +378,6 @@ body {
 }
 
 .benefit-list {
-  /* width: 1042px; */
   display: grid;
   grid-template-columns: 506px 506px;
   row-gap: 31px;
@@ -395,8 +386,7 @@ body {
   padding: 0;
 }
 
-.benefit-item-wrapper {
-  width: 506px;
+.benefit-item {
   display: flex;
 
 }
@@ -422,14 +412,16 @@ body {
 /*BLOG AND SUBSCRIPTION*/
 
 .blog-and-subscription-wrapper {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 76px;
 }
 
 .blog {
   width: 570px;
   display: flex;
-  justify-items: flex-start;
-  align-items: flex-start;
+  /* justify-items: flex-start;
+  align-items: flex-start; */
   background-image: url("../images/backgrounds/blog-field.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
@@ -439,9 +431,14 @@ body {
 .blog-container {
   width: 303px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
 }
 
 .blog-news {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -455,21 +452,51 @@ body {
   color: #2D3440;
 }
 
+.news-description {
+  margin: 0;
+}
+
 .subscription {
   width: 570px;
-  height: 220px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 6px;
   background-image: url("../images/backgrounds/post-field.jpg");
+  background-repeat: no-repeat;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
 
 .subscription-wrapper {
-  width: 558px;
+  padding: 24px;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
 
+.subscription-form {
+  display: flex;
+}
+
+.subscription-field {
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.subscription-field::placeholder {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .subscription-description {
+  margin: 0;
+  margin-bottom: 42px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
