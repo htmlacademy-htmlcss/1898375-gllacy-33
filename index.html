@@ -258,28 +258,22 @@
         <p class="delivery-description">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин?
           Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       </div>
-      <div class="delivery-form-wrapper">
-        <form action="https://echo.htmlacademy.ru/" method="post">
+      <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <p class="delivery-field-name">
-            <label>
-              Дата <input class="delivery-field" placeholder="01.04.2020" type="text" name="delivery-date">
-            </label>
-          </p>
-          <p class="delivery-field-name">
-            <label>
-              Телефон <input class="delivery-field" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone">
-            </label>
-          </p>
-          <p class="delivery-field-name">
-            <label>
-              Адрес <input class="delivery-field" placeholder="ул. Большая Конюшенная, 19/8" type="text"
-                name="delivery-adress">
-            </label>
-          </p>
-          <button class="second-style-button" type="submit">Отправить</button>
-        </form>
-      </div>
+          <div class="delivery-field-wrapper">
+            <div class="delivery-field-name delivery-phone">
+              <label class="delivery-form-label" for="delivery-date">Дата</label>
+              <input class="delivery-field delivery-date" placeholder="01.04.2020" type="text" name="delivery-date" id="delivery-date">
+            </div>
+            <div class="delivery-field-name delivery-phone">
+              <label class="delivery-form-label" for="delivery-phone">Телефон</label>
+              <input class="delivery-field delivery-phone" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone" id="delivery-phone">
+            </div>
+          </div>
+            <label class="delivery-form-label" for="delivery-adress">Адрес</label>
+            <input class="delivery-field delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="delivery-adress" id="delivery-adress">
+          <button class="second-style-button delivery-button" type="submit">Отправить</button>
+      </form>
     </section>
 
     <section class="shop-requisites">

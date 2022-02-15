@@ -419,9 +419,6 @@ body {
 
 .blog {
   width: 570px;
-  display: flex;
-  /* justify-items: flex-start;
-  align-items: flex-start; */
   background-image: url("../images/backgrounds/blog-field.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
@@ -430,15 +427,12 @@ body {
 
 .blog-container {
   width: 303px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-items: flex-start;
-  align-items: flex-start;
+  padding: 32px;
 }
 
 .blog-news {
   margin: 0;
+  margin-bottom: 12px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -514,19 +508,55 @@ body {
   background-color: #FCFCFC;
   border-radius: 16px;
 }
-
-.delivery-form-wrapper {
+.delivery-form {
   width: 500px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
   background-color: #FCFCFC;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   margin-right: 64px;
+
 }
 
 .delivery-description-wrapper {
   width: 371px;
   margin-right: 135px;
   margin-left: 100px;
+}
+
+.form-description {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.delivery-field-wrapper {
+  display: flex;
+}
+
+.delivery-form-label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  margin-bottom: 8px;
+}
+
+.delivery-date {
+  margin-right: 16px;
+}
+
+.delivery-phone {
+  flex-grow: 2;
+}
+
+.delivery-adress {
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .delivery-title{
@@ -537,10 +567,21 @@ body {
 }
 
 .delivery-field-name {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2D3440;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.delivery-field {
+  color: #B9B9B9;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.delivery-button {
+  align-self: center;
 }
 
 /*SHOP REQUISITES*/
