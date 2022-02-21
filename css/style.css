@@ -386,7 +386,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #2D3440;  
+  color: #2D3440;
 }
 
 .basket-thumb {
@@ -420,14 +420,16 @@ body {
 .benefit-list {
   display: grid;
   grid-template-columns: 506px 506px;
-  row-gap: 31px;
-  column-gap: 40px;
+  row-gap: 40px;
+  column-gap: 32px;
   margin: 0 auto;
   padding: 0;
 }
 
 .benefit-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 48px auto;
+  column-gap: 16px;
 
 }
 
@@ -435,9 +437,6 @@ body {
   margin: 0;
 }
 
-.benefit-icons {
-  margin-right: 16px;
-}
 
 .benefit-title {
   font-weight: 900;
@@ -548,18 +547,6 @@ body {
   background-color: #FCFCFC;
   border-radius: 16px;
 }
-.delivery-form {
-  width: 500px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  background-color: #FCFCFC;
-  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
-  border-radius: 8px;
-  margin-right: 64px;
-
-}
 
 .delivery-description-wrapper {
   width: 371px;
@@ -567,13 +554,67 @@ body {
   margin-left: 100px;
 }
 
-.form-description {
-  margin: 0;
-  margin-bottom: 12px;
+.delivery-form {
+  width: 500px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+  "form-description form-description form-description"
+  "delivery-field-wrapper delivery-field-wrapper delivery-field-wrapper"
+  "delivery-adress-wrapper delivery-adress-wrapper delivery-adress-wrapper"
+  ". delivery-button .";
+  padding: 40px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  margin-right: 64px;
 }
 
 .delivery-field-wrapper {
-  display: flex;
+  grid-area: delivery-field-wrapper;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 117px 1fr;
+  grid-template-areas:
+  "date-label phone-label"
+  "delivery-date delivery-phone";
+  margin-bottom: 20px;
+}
+
+.date-label {
+  grid-area: date-label;
+}
+
+.phone-label {
+  grid-area: phone-label;
+}
+
+.delivery-date {
+  box-sizing: border-box;
+  grid-area: delivery-date;
+}
+
+.delivery-phone {
+  grid-area: delivery-phone;
+}
+
+.delivery-adress-wrapper {
+  grid-area: delivery-adress-wrapper;
+  grid-column: span 3;
+  display: grid;
+  margin-bottom: 32px;
+}
+
+.delivery-button {
+  grid-area: delivery-button;
+  align-self: center;
+}
+
+.form-description {
+  grid-area: form-description;
+  grid-column: span 3;
+  margin: 0;
+  margin-bottom: 32px;
 }
 
 .delivery-form-label {
@@ -594,9 +635,7 @@ body {
 }
 
 .delivery-adress {
-  flex-grow: 1;
   margin: 0;
-  margin-bottom: 32px;
 }
 
 .delivery-title{
@@ -620,9 +659,6 @@ body {
   border-radius: 4px;
 }
 
-.delivery-button {
-  align-self: center;
-}
 
 /*SHOP REQUISITES*/
 
@@ -648,7 +684,7 @@ body {
   margin-bottom: 12px;
 }
 
-.time-description { 
+.time-description {
   margin-bottom: 32px;
 }
 
@@ -778,37 +814,93 @@ body {
 .field-border-off {
   border: none;
   padding: 0;
-  margin-right: 26px;
+  margin: 0;
+}
+
+.filter-title {
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: 20px;
 }
 
 .catalog-filter-form {
-  width: 807px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-areas:
+  "sorting-filter range-filter radio-filter radio-filter"
+  "checkbox-filter checkbox-filter checkbox-filter filters-button";
+  column-gap: 24px;
+  row-gap: 16px;
+  justify-content: start;
+}
+
+.sorting-filter {
+  grid-area: sorting-filter;
+  display: grid;
+}
+
+.range-filter {
+  grid-area: range-filter;
+  display: grid;
 }
 
 .radio-filter {
-  display: flex;
-  flex-direction: column;
+  grid-area: radio-filter;
+  display: grid;
 }
 
 .checkbox-filter {
-  flex-direction: column;
-  display: flex;
-  justify-content: flex-start;
+  grid-area: checkbox-filter;
+  display: grid;
 }
+
+.products-selection {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+.price-range-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+
+}
+
+.price-range {
+  width: 196px;
+  margin: 0;
+}
+
 
 .fat-list {
   display: flex;
-  justify-content: flex-start;
-  padding: 0;
+  padding: 8px 16px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+.fat-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .fillers-list {
   display: flex;
   justify-content: flex-start;
-  padding: 0;
+  padding: 8px 16px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+
+.filler-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 

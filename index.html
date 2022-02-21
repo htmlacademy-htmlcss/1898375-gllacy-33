@@ -287,17 +287,15 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <div class="delivery-field-wrapper">
-            <div class="delivery-field-name delivery-phone">
-              <label class="delivery-form-label" for="delivery-date">Дата</label>
+              <label class="delivery-form-label date-label" for="delivery-date">Дата</label>
               <input class="delivery-field delivery-date" placeholder="01.04.2020" type="text" name="delivery-date" id="delivery-date">
-            </div>
-            <div class="delivery-field-name delivery-phone">
-              <label class="delivery-form-label" for="delivery-phone">Телефон</label>
+              <label class="delivery-form-label phone-label" for="delivery-phone">Телефон</label>
               <input class="delivery-field delivery-phone" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone" id="delivery-phone">
-            </div>
           </div>
+          <div class="delivery-adress-wrapper">
             <label class="delivery-form-label" for="delivery-adress">Адрес</label>
             <input class="delivery-field delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="delivery-adress" id="delivery-adress">
+          </div>
           <button class="second-style-button delivery-button" type="submit">Отправить</button>
       </form>
     </section>
