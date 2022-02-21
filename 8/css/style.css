@@ -1,0 +1,973 @@
+@font-face {
+	font-family: "Inter";
+	font-weight: 400;
+	src: url("../fonts/inter-400.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 700;
+	src: url("../fonts/inter-700.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 900;
+	src: url("../fonts/inter-900.woff2") format("woff2");
+	font-display: swap;
+}
+
+/* GLOBAL VALUES */
+
+body {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+	font-family: "Inter", sans-serif;
+  font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #565C66;
+	background: #FEAFC3;
+}
+
+.page-setting {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.global-list {
+	list-style-type: none;
+}
+
+.main-style-button	{
+  display: block;
+  padding: 12px 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #2D3440;
+  border: 4px solid #FFCBD8;
+  border-radius: 26px;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  text-align: center;
+	text-decoration: none;
+  background-color: #FCFCFC;
+}
+
+.second-style-button {
+  display: block;
+  padding: 12px 32px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FCFCFC;
+  border-radius: 26px;
+  border: 4px solid  #FFCBD8 ;
+	text-decoration: none;
+  background-color: #FF2F64;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* MAIN HEADER */
+
+.main-navigation {
+  display: flex;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+}
+
+.navigation-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin-right: auto;
+}
+
+.navigation-logo {
+  margin-right: 16px;
+}
+.navigation-button {
+  padding: 8px 16px;
+}
+
+.user-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+}
+
+.user-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.navigation-button {
+  display: block;
+	line-height: 20px;
+	text-align: center;
+	color: #2D3440;
+	text-decoration: none;
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #2D3440;
+  background-color: #FFCBD8;
+  border-radius: 16px;
+	text-decoration: none;
+}
+
+.user-icon {
+  margin-right: 6px;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+	font-size: 14px;
+	line-height: 20px;
+	color: #2D3440;
+	text-decoration: none;
+}
+
+.circle-search {
+  padding: 7px;
+  background-color: #FFCBD8;
+  border-radius: 50%;
+  margin: 0;
+}
+
+.shop-phone {
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	color: #2D3440;
+	text-decoration: none;
+
+}
+/* ICE CREAM CAROUSEL*/
+
+.ice-cream-carousel {
+  margin-bottom: 80px;
+}
+
+.ice-cream-item {
+  display: flex;
+}
+
+.ice-cream-list {
+  margin: 0;
+  padding: 0;
+}
+
+.item-description-wrapper {
+  width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 70px;
+
+}
+
+.ice-cream-wrapper {
+  width: 630px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ice-cream-big {
+  padding: 24px;
+  padding-top: 21px;
+  padding-bottom: 26px;
+}
+
+.ice-cream-small {
+  padding-right: 17px;
+  padding-left: 17px;
+}
+
+.carousel-bottom-wrapper {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.ice-cream-pagination,
+.socials-list {
+  display: flex;
+  padding: 0;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.ice-cream-name {
+  margin: 0;
+  margin-bottom: 24px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46px;
+  color: #2D3440;
+}
+
+.ice-cream-description {
+  margin: 0;
+  margin-bottom: 48px;
+	font-size: 18px;
+	line-height: 24px;
+  color: #2D3440;
+
+}
+
+/* SHOP GIFTS */
+
+.shop-gifts {
+  margin-bottom: 80px;
+}
+
+.gift-list {
+  width: 1170px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.gift-item-first {
+  max-width: 570px;
+	background-color: #FF7799;
+	border-radius: 16px;
+  padding: 40px;
+  padding-right: 209px;
+  background-image: url("../images/gifts/raspberries-gift.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 374px bottom ;
+}
+
+.gift-item-second {
+  max-width: 570px;
+	background-color: #FF7799;
+	border-radius: 16px;
+  padding: 40px;
+  padding-right: 209px;
+  background-image: url("../images/gifts/marshmallow-gift.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.gift-description-wrapper {
+  width: 321px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.motivational-call {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 56px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  white-space: pre-line
+}
+
+
+.gift-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.gift-description {
+  color: #2D3440;
+}
+
+/* SHOP POPULAR ITEMS (CATALOG CARDS)*/
+
+.shop-popular {
+  margin-bottom: 80px;
+}
+
+.ice-cream-popular {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-item,
+.ice-cream-catalog-item {
+  width: 270px;
+  display: flex;
+  padding-bottom: 24px;
+  flex-direction: column;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.ice-cream-catalog-item:not(:nth-child(n+9)) {
+  margin-bottom: 40px;
+}
+
+.ice-cream-item-name {
+  margin: 0;
+  align-self: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  order: 2;
+}
+
+.ice-cream-ball {
+  border-radius: 50%;
+  order: 1;
+  align-self: center;
+  margin-bottom: 12px;
+}
+
+.popular-description,
+.catalog-item-description {
+  max-width: 190px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  order: 3;
+  align-self: center;
+  white-space: pre-line;
+}
+
+.price-wrapper  {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  order: 4;
+}
+
+.price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.basket-thumb {
+  display: block;
+  padding: 8px 11px;
+  background: #FF2F64;
+  border-radius: 26px;
+  margin: 0;
+  text-align: center;
+}
+
+/*SHOP BENEFITS*/
+
+.shop-benefits {
+  margin-bottom: 80px;
+  padding: 20px;
+  background-image: url("../images/backgrounds/waffle-field.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.benefits-wrapper {
+  background-color: #FCFCFC;
+  border-radius: 16px;
+  padding-top: 56px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 56px;
+}
+
+.benefit-list {
+  display: grid;
+  grid-template-columns: 506px 506px;
+  row-gap: 40px;
+  column-gap: 32px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.benefit-item {
+  display: grid;
+  grid-template-columns: 48px auto;
+  column-gap: 16px;
+
+}
+
+.benefit-description {
+  margin: 0;
+}
+
+
+.benefit-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2D3440;
+  margin: 0;
+  margin-bottom: 56px;
+}
+
+/*BLOG AND SUBSCRIPTION*/
+
+.blog-and-subscription-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 76px;
+}
+
+.blog {
+  width: 570px;
+  background-image: url("../images/backgrounds/blog-field.jpg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.blog-container {
+  width: 303px;
+  padding: 32px;
+}
+
+.blog-news {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.blog-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.news-description {
+  margin: 0;
+}
+
+.subscription {
+  width: 570px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 6px;
+  background-image: url("../images/backgrounds/post-field.jpg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.subscription-wrapper {
+  padding: 24px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.subscription-form {
+  display: flex;
+}
+
+.subscription-field {
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.subscription-field::placeholder {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.subscription-description {
+  margin: 0;
+  margin-bottom: 42px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*SHOP DELIVERY*/
+
+.delivery {
+  width: 1170px;
+  min-height: 534px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  background-image: url("../images/backgrounds/delivery-field.jpg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.delivery-description-wrapper {
+  width: 371px;
+  margin-right: 135px;
+  margin-left: 100px;
+}
+
+.delivery-form {
+  width: 500px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+  "form-description form-description form-description"
+  "delivery-field-wrapper delivery-field-wrapper delivery-field-wrapper"
+  "delivery-adress-wrapper delivery-adress-wrapper delivery-adress-wrapper"
+  ". delivery-button .";
+  padding: 40px;
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  margin-right: 64px;
+}
+
+.delivery-field-wrapper {
+  grid-area: delivery-field-wrapper;
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 117px 1fr;
+  grid-template-areas:
+  "date-label phone-label"
+  "delivery-date delivery-phone";
+  margin-bottom: 20px;
+}
+
+.date-label {
+  grid-area: date-label;
+}
+
+.phone-label {
+  grid-area: phone-label;
+}
+
+.delivery-date {
+  box-sizing: border-box;
+  grid-area: delivery-date;
+}
+
+.delivery-phone {
+  grid-area: delivery-phone;
+}
+
+.delivery-adress-wrapper {
+  grid-area: delivery-adress-wrapper;
+  grid-column: span 3;
+  display: grid;
+  margin-bottom: 32px;
+}
+
+.delivery-button {
+  grid-area: delivery-button;
+  align-self: center;
+}
+
+.form-description {
+  grid-area: form-description;
+  grid-column: span 3;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.delivery-form-label {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  margin-bottom: 8px;
+}
+
+.delivery-date {
+  margin-right: 16px;
+}
+
+.delivery-phone {
+  flex-grow: 2;
+}
+
+.delivery-adress {
+  margin: 0;
+}
+
+.delivery-title{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-field-name {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.delivery-field {
+  color: #B9B9B9;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+
+/*SHOP REQUISITES*/
+
+.shop-requisites {
+  padding: 64px;
+  padding-right: 0;
+  background-image: url("../images/backgrounds/requisites-field.jpg");
+  background-repeat: no-repeat;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+}
+
+.requisites-wrapper {
+  width: 343px;
+  background-color: #FCFCFC;
+  border-radius: 16px;
+  padding: 40px;
+  margin-right: auto;
+}
+
+.requisites-description {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.time-description {
+  margin-bottom: 32px;
+}
+
+.adress-link {
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-decoration: none;
+  white-space: pre-line
+}
+
+.phone-requisites {
+  margin-bottom: 0;
+}
+
+/*MAIN FOOTER*/
+
+.main-footer {
+  box-sizing: border-box;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-list {
+  margin-right: 120px;
+  margin-left: 299px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.footer-item:first-child {
+  list-style-image: url("../images/icons/heart-icon.svg");
+  margin-right: 24px;
+}
+
+.footer-item:nth-child(3) {
+  margin-right: 32px;
+}
+
+.about-developer {
+  white-space: nowrap;
+}
+
+.who-did-description {
+  margin: 0;
+}
+
+.footer-link {
+  font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #2D3440;
+	text-decoration: none;
+}
+
+.developer-link {
+  color: #2D3440;
+}
+
+/*CATALOG HEADER*/
+
+.inner-page-header {
+  margin-bottom: 40px;
+}
+
+.catalog-filters {
+  margin-bottom: 48px;
+}
+
+.navigation-button-current {
+  border-radius: 26px;
+  background-color: #FF4A78;
+}
+
+.inner-page-title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+
+.breadcrumb-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.breadcrumb-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  text-decoration: none;
+}
+
+/*CATALOG FILTERS*/
+
+.catalog-filters, .filter-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.field-border-off {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-title {
+  margin: 0;
+  margin-bottom: 8px;
+  margin-left: 20px;
+}
+
+.catalog-filter-form {
+  display: grid;
+  grid-template-areas:
+  "sorting-filter range-filter radio-filter radio-filter"
+  "checkbox-filter checkbox-filter checkbox-filter filters-button";
+  column-gap: 24px;
+  row-gap: 16px;
+  justify-content: start;
+}
+
+.sorting-filter {
+  grid-area: sorting-filter;
+  display: grid;
+}
+
+.range-filter {
+  grid-area: range-filter;
+  display: grid;
+}
+
+.radio-filter {
+  grid-area: radio-filter;
+  display: grid;
+}
+
+.checkbox-filter {
+  grid-area: checkbox-filter;
+  display: grid;
+}
+
+.products-selection {
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-width: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+.price-range-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+
+}
+
+.price-range {
+  width: 196px;
+  margin: 0;
+}
+
+
+.fat-list {
+  display: flex;
+  padding: 8px 16px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+.fat-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.fillers-list {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 16px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+}
+
+
+.filler-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+
+.filters-button {
+  width: 187px;
+  height: 36px;
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+  background-color: #FFCBD8;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #2D3440;
+  align-self: flex-end;
+}
+
+/*CATALOG*/
+
+.ice-cream-catalog-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 57px;
+}
+
+.catalog-control-wrapper {
+  display: flex;
+}
+
+.pagination-show-more {
+  order: 1;
+  margin-left: 494px;
+  margin-right: auto;
+}
+
+.catalog-pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  order: 2;
+}
+
+
+.pagination-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.pagination-item:first-child {
+  margin-right: 24px;
+}
+
+.pagination-item:nth-child(6) {
+  margin-right: 24px;
+}
+
+
+.pagination-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+}
+
+
+
