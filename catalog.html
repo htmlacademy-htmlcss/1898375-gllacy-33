@@ -102,28 +102,32 @@
           <h3 class="filter-title">Жирность:</h3>
           <ul class="fat-list global-list">
             <li class="fat-item">
-              <label class="fat-percentage">
-                <input class="fat-input" type="radio" name="fat-percent" value="zero-percent">
-                0%
-              </label>
+              <div class="fat-percentage">
+                <input class="fat-input" type="radio" id="fat-zero" name="fat-percent" value="zero-percent">
+                <span class="fat-checkmark"></span>
+              </div>
+              <label class="fat-input-label" for="fat-zero">0%</label>
             </li>
             <li class="fat-item">
-              <label class="fat-percentage">
-                <input class="fat-input" type="radio" name="fat-percent" value="up-to-ten-percent" checked>
-                до 10%
-              </label>
+              <div class="fat-percentage">
+                <input class="fat-input" type="radio" id="up-to-ten" name="fat-percent" value="up-to-ten-percent">
+                <span class="fat-checkmark"></span>
+              </div>
+              <label class="fat-input-label" for="up-to-ten">до 10%</label>
             </li>
             <li class="fat-item">
-              <label class="fat-percentage">
-                <input class="fat-input" type="radio" name="fat-percent" value="up-to-thirty-percent">
-                до 30%
-              </label>
+              <div class="fat-percentage">
+                <input class="fat-input" type="radio" id="up-to-thirty" name="fat-percent" value="up-to-thirty-percent">
+                <span class="fat-checkmark"></span>
+              </div>
+              <label class="fat-input-label" for="up-to-thirty">до 30%</label>
             </li>
             <li class="fat-item">
-              <label class="fat-percentage">
-                <input class="fat-input" type="radio" name="fat-percent" value="over-thirty-percent">
-                выше 30%
-              </label>
+              <div class="fat-percentage">
+                <input class="fat-input" type="radio" id="over-thirty" name="fat-percent" value="over-thirty-percent">
+                <span class="fat-checkmark"></span>
+              </div>
+              <label class="fat-input-label" for="over-thirty">выше 30%</label>
             </li>
           </ul>
         </fieldset>
@@ -134,14 +138,16 @@
             <li class="filler-item">
               <label class="filler-name">
                 <input class="filler-input" type="checkbox" name="chocolate" checked>
-                шоколадные
+                <span class="filler-checkmark"></span>
               </label>
+              шоколадные
             </li>
             <li class="filler-item">
               <label class="filler-name">
                 <input class="filler-input" type="checkbox" name="sugar-sprinkles" checked>
-                сахарные посыпки
+                <span class="filler-checkmark"></span>
               </label>
+              сахарные посыпки
             </li>
             <li class="filler-item">
               <label class="filler-name">
