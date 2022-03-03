@@ -82,6 +82,7 @@ body {
 .second-style-button {
   display: block;
   padding: 12px 32px;
+  font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -194,20 +195,20 @@ body {
 
 .navigation-button:hover {
   border-radius: 26px;
-  background-color: rgb(231,231,231, 0.4);
+  background-color: rgba(252, 252, 252, 0.5)
 }
 
 .navigation-button:focus {
   outline-offset: 0;
   outline: 2px solid #2D3440;
   border-radius: 26px;
-  background-color: rgba(231,231,231, 0.4);
+  background-color: rgba(252, 252, 252, 0.5)
 }
 
 .navigation-button:active {
   outline: none;
   border-radius: 26px;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
 }
 
 .user-button {
@@ -217,24 +218,24 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	color: #2D3440;
-  background-color: rgba(231, 231, 231, 0.4);
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 16px;
 	text-decoration: none;
 }
 
 .user-button:hover {
-  background-color: #E7E7E7;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .user-button:focus {
   outline-offset: 0;
   outline: 2px solid #2D3440;;
-  background-color: #E7E7E7;
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .user-button:active {
   outline: none;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
 }
 
 .user-icon {
@@ -248,24 +249,24 @@ body {
   justify-content: center;
   align-items: center;
 	text-decoration: none;
-  background-color: rgba(231, 231, 231, 0.4);
+  background-color: rgba(252, 252, 252, 0.3);
   border-width: 0;
   border-radius: 50%;
 }
 
 .header-search:hover {
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .header-search:focus {
   outline-offset: 0;
   outline: 2px solid #2D3440;;
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(252, 252, 252, 0.5);
 }
 
 .header-search:active {
   outline: none;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
 }
 
 .circle-search {
@@ -284,20 +285,20 @@ body {
 
 .shop-phone:hover {
   border-radius: 26px;
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(252, 252, 252, 0.5)
 }
 
 .shop-phone:focus {
   outline-offset: 0;
   outline: 2px solid #2D3440;
   border-radius: 26px;
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(252, 252, 252, 0.5)
 }
 
 .shop-phone:active {
   outline: none;
   border-radius: 26px;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
 }
 
 /* ICE CREAM CAROUSEL*/
@@ -1389,7 +1390,7 @@ body {
   background-color: #2D3440;
   left: -22px;
   top: 6px;
-} 
+}
 
 .fat-input:hover + .fat-label::before {
   border-color: #FCFCFC;
@@ -1465,6 +1466,7 @@ body {
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   background-color: #FFCBD8;
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -1512,6 +1514,7 @@ body {
   margin-left: 494px;
   margin-right: auto;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .catalog-pagination {
