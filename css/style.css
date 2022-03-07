@@ -850,6 +850,7 @@ body {
   padding-left: 16px;
   padding-top: 14px;
   padding-bottom: 14px;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   margin: 0;
@@ -997,6 +998,7 @@ body {
   padding-left: 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+  font-family: inherit;
 }
 
 .delivery-field::placeholder {
@@ -1297,6 +1299,7 @@ body {
 .products-selection {
   width: 196px;
   padding: 8px 16px;
+  font: inherit;
   border-width: 0;
   border-radius: 20px;
   background-color: #FFCBD8;
@@ -1360,9 +1363,6 @@ body {
   cursor: pointer;
 }
 
-.fat-input {
-  display: none;
-}
 
 .fat-label {
   position: relative;
@@ -1396,7 +1396,20 @@ body {
   border-color: #FCFCFC;
 }
 
+.fat-input:focus + .fat-label::before {
+  border-color: #FCFCFC;
+}
+
+.fat-input:active + .fat-label::before {
+  border-color: #FF2F64;
+}
+
 .fat-input:hover + .fat-label::after {
+  border-color: #FCFCFC;
+  background-color: #FCFCFC;
+}
+
+.fat-input:focus + .fat-label::after {
   border-color: #FCFCFC;
   background-color: #FCFCFC;
 }
@@ -1421,9 +1434,6 @@ body {
   cursor: pointer;
 }
 
-.filler-input {
-  display: none;
-}
 
 .filler-label {
   position: relative;
@@ -1439,8 +1449,9 @@ body {
   left: 0;
   top: 2px;
 }
+
 .filler-input:checked + .filler-label:after {
-  content:  url("../images/icons/filled-checkbox.svg");
+  content: url("../images/icons/filled-checkbox.svg");
   position: absolute;
   width: 16px;
   height: 16px;
@@ -1452,13 +1463,26 @@ body {
   display: none;
 }
 
+.filler-input:hover + .filler-label:before {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(0%) hue-rotate(5deg) brightness(102%) contrast(105%);
+}
+
+.filler-input:focus + .filler-label:before {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(0%) hue-rotate(5deg) brightness(102%) contrast(105%);
+}
+
+.filler-input:active + .filler-label:before {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(91%) saturate(5978%) hue-rotate(328deg) brightness(102%) contrast(101%);
+}
+
 .filler-input:hover + .filler-label:after {
   filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(0%) hue-rotate(5deg) brightness(102%) contrast(105%);
 }
 
-.filler-input:hover + .filler-label:before {
+.filler-input:focus + .filler-label:after {
   filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(0%) hue-rotate(5deg) brightness(102%) contrast(105%);
 }
+
 
 .filters-button {
   width: 187px;
