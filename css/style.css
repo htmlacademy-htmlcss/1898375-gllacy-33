@@ -31,7 +31,18 @@ body {
 	font-size: 16px;
 	line-height: 22px;
 	color: #565C66;
-	background: #FEAFC3;
+}
+
+.cite-color-pink {
+  background-color: #FEAFC3;
+}
+
+.cite-color-blue {
+  background-color: #69A9FF;
+}
+
+.cite-color-yellow {
+  background-color: #FCC850;
 }
 
 .page-setting {
@@ -148,10 +159,11 @@ body {
 }
 
 .navigation-item:not(:last-child) {
-  margin-right: 2px;
+  margin-right: 1px;
 }
 
 .navigation-logo {
+  display: flex;
   margin-right: 16px;
   cursor: pointer;
 }
@@ -304,11 +316,16 @@ body {
 /* ICE CREAM CAROUSEL*/
 
 .ice-cream-carousel {
+  position: relative;
   margin-bottom: 80px;
 }
 
 .ice-cream-item {
   display: flex;
+}
+
+.item-off {
+  display: none;
 }
 
 .ice-cream-list {
@@ -346,15 +363,15 @@ body {
   transform: translate(-50%, -50%);
   width: 312px;
   height: 312px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.5);
   border-radius: 50%;
   z-index: -1;
 }
 
 .ice-cream-big {
-  padding: 24px;
-  padding-top: 21px;
-  padding-bottom: 26px;
+  padding-right: 24px;
+  padding-left: 24px;
+
 }
 
 .ice-cream-small-container {
@@ -377,7 +394,7 @@ body {
   background-color: #FFCBD8;
   border-radius: 50%;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .carousel-bottom-wrapper {
@@ -390,10 +407,11 @@ body {
 .ice-cream-name {
   margin: 0;
   margin-bottom: 24px;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 36px;
 	line-height: 46px;
   color: #2D3440;
+  white-space: pre-line;
 }
 
 .ice-cream-description {
@@ -402,6 +420,7 @@ body {
 	font-size: 18px;
 	line-height: 24px;
   color: #2D3440;
+  white-space: pre-line;
 }
 
 .arrow {
@@ -409,11 +428,23 @@ body {
   height: 38px;
   outline: 2px solid #FCFCFC;
   outline-offset: -1px;
-  background-color: #FFCBD8;
+  background-color: rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   border-width: 0;
   cursor: pointer;
   padding: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.carousel-back-button {
+  top: 258px;
+  left: 543px;
+}
+
+.carousel-forward-button {
+  top: 258px;
+  left: 853px;
 }
 
 .arrow-carousel-container {
