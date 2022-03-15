@@ -18,6 +18,23 @@
       <ul class="navigation-links global-list">
         <li class="navigation-item">
           <a class="navigation-button navigation-button-current" href="catalog.html">Каталог</a>
+            <ul class="submenu-list global-list">
+              <li class="submenu-item submenu-special-item">
+                <a class="submenu-link" href="#">Новинки</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Сливочное</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="#">Мелорин</a>
+              </li>
+            </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-button" href="#">Доставка и оплата</a>
@@ -37,6 +54,9 @@
             </svg>
             <span class="visually-hidden">Поиск по магазину</span>
           </a>
+          <div class="popover-search popover-off">
+            <input  class="input-search" placeholder="Поиск по сайту" type="search" >
+          </div>
         </li>
         <li class="user-item">
           <a class="user-button header-account" href="#">
@@ -46,6 +66,18 @@
             <span class="visually-hidden">Личный кабинет</span>
             Вход
           </a>
+          <div class="account-popover account-popover-off">
+            <h2 class="popover-name">Личный кабинет</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="account-input login-field" placeholder="email@example.com" type="email" name="login-email">
+              <input class="account-input password-field" placeholder="Пароль" type="password" name="login-password">
+              <button class="login-button second-style-button" type="submit">Войти</button>
+            </form>
+            <div class="login-links-wrapper">
+              <a class="login-help-link" href="#">Забыли пароль</a>
+              <a class="login-help-link" href="#">Регистрация</a>
+            </div>
+          </div>
         </li>
         <li class="user-item">
           <a class="user-button header-basket" href="#">
@@ -53,8 +85,39 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489594C0.944351 0.489594 0.645874 0.78807 0.645874 1.15626C0.645874 1.52445 0.944351 1.82293 1.31254 1.82293H3.37353L3.91319 4.5192C3.91612 4.53801 3.91985 4.55655 3.92432 4.5748L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54046C16.3456 4.34529 16.2938 4.14369 16.1672 3.99061C16.0405 3.83752 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02542C4.51133 0.71385 4.23774 0.489594 3.91999 0.489594H1.31254ZM6.32068 9.75386L5.38566 5.08224H14.8477L13.9562 9.75686C13.9268 9.90269 13.8472 10.0336 13.7313 10.127C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.127C6.42978 10.0332 6.35 9.90146 6.32087 9.75482L6.32068 9.75386ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8756 6.5285 12.8756C7.25644 12.8756 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8756 13.6985 12.8756C14.4264 12.8756 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z"/>
             </svg>
             <span class="visually-hidden">Корзина</span>
-            Пусто
+            2 товара
           </a>
+          <div class="filled-basket-popover popover-off">
+            <h2 class="basket-name">Корзина</h2>
+            <ul class="basket-list">
+              <li class="basket-item">
+                <img class="basket-ice-ball" width="46" height="46" src="../1898375-gllacy-33/images/basket-ice-ball/basket-raspberry-ball.jpg" alt="шар малинового мороженного">
+                <div class="inner-basket-wrapper">
+                  <p class="basket-ice-name">Малинка</p>
+                  <span class="kg-and-price">1 кг x 310 ₽</span>
+                </div>
+                <p class="basket-price">310 ₽</p>
+                <button class="delet-from-busket-button" type="button">
+                  <span class="visually-hidden">удалить из корзины</span>
+                </button>
+              </li>
+              <li class="basket-item">
+                <img class="basket-ice-ball" width="46" height="46" src="../1898375-gllacy-33/images/basket-ice-ball/basket-buble-gum-ball.jpg" alt="шар мороженного бабл-гам">
+                <div class="inner-basket-wrapper">
+                  <p class="basket-ice-name">Малинка</p>
+                  <span class="kg-and-price">1 кг x 310 ₽</span>
+                </div>
+                <p class="basket-price">310 ₽</p>
+                <button class="delet-from-busket-button" type="button">
+                  <span class="visually-hidden">удалить из корзины</span>
+                </button>
+              </li>
+              <div class="basket-footer-wrapper">
+                <a class="basket-order-button second-style-button" href="#" >Оформить заказ</a>
+                <span class="basket-total-price">Итого: 790 ₽</span>
+              </div>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>

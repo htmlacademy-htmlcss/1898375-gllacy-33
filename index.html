@@ -18,6 +18,23 @@
       <ul class="navigation-links global-list">
         <li class="navigation-item">
           <a class="navigation-button" href="catalog.html">Каталог</a>
+          <ul class="submenu-list global-list">
+            <li class="submenu-item submenu-special-item">
+              <a class="submenu-link" href="#">Новинки</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#">Сливочное</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#">Щербеты</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li class="navigation-item">
           <a class="navigation-button" href="#">Доставка и оплата</a>
@@ -37,6 +54,9 @@
             </svg>
             <span class="visually-hidden">Поиск по магазину</span>
           </a>
+          <div class="popover-search search-popover-off">
+            <input  class="input-search" placeholder="Поиск по сайту" type="search" >
+          </div>
         </li>
         <li class="user-item">
           <a class="user-button header-account" href="#">
@@ -46,6 +66,18 @@
             <span class="visually-hidden">Личный кабинет</span>
             Вход
           </a>
+          <div class="account-popover account-popover-off">
+            <h2 class="popover-name">Личный кабинет</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="account-input login-field" placeholder="email@example.com" type="email" name="login-email">
+              <input class="account-input password-field" placeholder="Пароль" type="password" name="login-password">
+              <button class="login-button second-style-button" type="submit">Войти</button>
+            </form>
+            <div class="login-links-wrapper">
+              <a class="login-help-link" href="#">Забыли пароль</a>
+              <a class="login-help-link" href="#">Регистрация</a>
+            </div>
+          </div>
         </li>
         <li class="user-item">
           <a class="user-button header-basket" href="#">
@@ -53,8 +85,13 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M1.31254 0.489594C0.944351 0.489594 0.645874 0.78807 0.645874 1.15626C0.645874 1.52445 0.944351 1.82293 1.31254 1.82293H3.37353L3.91319 4.5192C3.91612 4.53801 3.91985 4.55655 3.92432 4.5748L5.01308 10.0146L5.0132 10.0151C5.10338 10.4685 5.35008 10.8757 5.71016 11.1656C6.06854 11.4541 6.51652 11.608 6.97639 11.6009H13.3011C13.761 11.608 14.209 11.4541 14.5673 11.1656C14.9276 10.8756 15.1743 10.4681 15.2644 10.0146L15.2644 10.0146L15.2654 10.0096L16.3084 4.54046C16.3456 4.34529 16.2938 4.14369 16.1672 3.99061C16.0405 3.83752 15.8522 3.7489 15.6535 3.7489H5.11879L4.57369 1.02542C4.51133 0.71385 4.23774 0.489594 3.91999 0.489594H1.31254ZM6.32068 9.75386L5.38566 5.08224H14.8477L13.9562 9.75686C13.9268 9.90269 13.8472 10.0336 13.7313 10.127C13.6148 10.2207 13.4691 10.2705 13.3196 10.2676L13.3196 10.2675H13.3068H6.9707V10.2674L6.95793 10.2676C6.80844 10.2705 6.66271 10.2207 6.54624 10.127C6.42978 10.0332 6.35 9.90146 6.32087 9.75482L6.32068 9.75386ZM5.21043 14.1936C5.21043 13.4657 5.80055 12.8756 6.5285 12.8756C7.25644 12.8756 7.84656 13.4657 7.84656 14.1936C7.84656 14.9216 7.25644 15.5117 6.5285 15.5117C5.80055 15.5117 5.21043 14.9216 5.21043 14.1936ZM12.3804 14.1936C12.3804 13.4657 12.9705 12.8756 13.6985 12.8756C14.4264 12.8756 15.0166 13.4657 15.0166 14.1936C15.0166 14.9216 14.4264 15.5117 13.6985 15.5117C12.9705 15.5117 12.3804 14.9216 12.3804 14.1936Z"/>
             </svg>
             <span class="visually-hidden">Корзина</span>
-            Пусто
+            <span class="basket-counter">Пусто</span>
           </a>
+          <div class="basket-popover basket-popover-off">
+            <span class="empty-basket"> Ваша корзина
+            пока пуста
+            </span>
+          </div>
         </li>
       </ul>
     </nav>
@@ -332,13 +369,35 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
           <div class="delivery-field-wrapper">
+            <span class="form-label">
               <label class="delivery-form-label date-label" for="delivery-date">Дата</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path class="tooltip-icon" fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"/>
+                  </svg>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите желаемую 
+                    дату доставки</span>                   
+                </button>
+              </span>
+            </span>
               <input class="delivery-field delivery-date" placeholder="01.04.2020" type="text" name="delivery-date" id="delivery-date">
               <label class="delivery-form-label phone-label" for="delivery-phone">Телефон</label>
               <input class="delivery-field delivery-phone" placeholder="+7 800 999-00-00" type="tel" name="delivery-phone" id="delivery-phone">
           </div>
           <div class="delivery-adress-wrapper">
+            <span class="form-label">
             <label class="delivery-form-label" for="delivery-adress">Адрес</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path class="tooltip-icon" fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"/>
+                  </svg>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название 
+                    улицы, дома и квартиры</span>                   
+                </button>
+              </span>
+            </span>
             <input class="delivery-field delivery-adress" placeholder="ул. Большая Конюшенная, 19/8" type="text" name="delivery-adress" id="delivery-adress">
           </div>
           <button class="second-style-button delivery-button" type="submit">Отправить</button>
@@ -402,6 +461,22 @@
       <p class="who-did-description">Сделано в <a class="developer-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
     </div>
   </footer>
+  <div class="modal-container modal-container-off">
+    <div class="modal modal-feedback">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-user-feedback">
+        <p class="modal-description">Мы обязательно ответим вам!</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="modal-feedback-input" placeholder="Имя и фамилия" type="text" name="first-last-name">
+          <input class="modal-feedback-input" placeholder="email@example.com" type="email" name="feedback-email">
+          <textarea class="feedback-textarea" placeholder="В свободной форме" name="feedback-textarea"></textarea>
+          <button class="modal-feedback-button second-style-button">Отправить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>
