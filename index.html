@@ -54,9 +54,15 @@
             </svg>
             <span class="visually-hidden">Поиск по магазину</span>
           </a>
-          <div class="popover-search search-popover-off">
-            <input  class="input-search" placeholder="Поиск по сайту" type="search" >
-          </div>
+          <form class="popover-search search-popover-off">
+            <input  class="input-search" placeholder="Поиск по сайту" type="text">
+            <button class="input-search-clean" type="reset">
+              <svg class="close-cross" width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.80303 1.13807C10.0634 0.877722 10.0634 0.455612 9.80303 0.195262C9.54268 -0.0650874 9.12057 -0.0650874 8.86022 0.195262L4.99914 4.05633L1.13807 0.195262C0.877722 -0.0650874 0.455612 -0.0650874 0.195262 0.195262C-0.0650874 0.455612 -0.0650874 0.877722 0.195262 1.13807L4.05633 4.99914L0.195262 8.86022C-0.0650874 9.12057 -0.0650874 9.54268 0.195262 9.80303C0.455612 10.0634 0.877722 10.0634 1.13807 9.80303L4.99914 5.94195L8.86022 9.80303C9.12057 10.0634 9.54268 10.0634 9.80303 9.80303C10.0634 9.54268 10.0634 9.12057 9.80303 8.86022L5.94195 4.99914L9.80303 1.13807Z"/>
+              </svg>
+              <span class="visually-hidden">очистить строку поиска</span>
+            </button>
+          </form>
         </li>
         <li class="user-item">
           <a class="user-button header-account" href="#">
@@ -72,11 +78,11 @@
               <input class="account-input login-field" placeholder="email@example.com" type="email" name="login-email">
               <input class="account-input password-field" placeholder="Пароль" type="password" name="login-password">
               <button class="login-button second-style-button" type="submit">Войти</button>
+              <div class="login-links-wrapper">
+                <a class="login-help-link" href="#">Забыли пароль</a>
+                <a class="login-help-link" href="#">Регистрация</a>
+              </div>
             </form>
-            <div class="login-links-wrapper">
-              <a class="login-help-link" href="#">Забыли пароль</a>
-              <a class="login-help-link" href="#">Регистрация</a>
-            </div>
           </div>
         </li>
         <li class="user-item">
@@ -376,8 +382,8 @@
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path class="tooltip-icon" fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"/>
                   </svg>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите желаемую 
-                    дату доставки</span>                   
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите желаемую
+                    дату доставки</span>
                 </button>
               </span>
             </span>
@@ -393,8 +399,8 @@
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path class="tooltip-icon" fill-rule="evenodd" clip-rule="evenodd" d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"/>
                   </svg>
-                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название 
-                    улицы, дома и квартиры</span>                   
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название
+                    улицы, дома и квартиры</span>
                 </button>
               </span>
             </span>
@@ -463,8 +469,8 @@
   </footer>
   <div class="modal-container modal-container-off">
     <div class="modal modal-feedback">
-      <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
+      <button class="modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть форму обратной связи</span>
       </button>
       <section class="modal-user-feedback">
         <p class="modal-description">Мы обязательно ответим вам!</p>

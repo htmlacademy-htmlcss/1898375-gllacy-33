@@ -55,14 +55,15 @@ body {
 }
 
 .main-style-button	{
-  display: block;
-  padding: 12px 32px;
+  padding: 8px 28px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	color: #2D3440;
-  border: 4px solid #FFCBD8;
+  box-sizing: border-box;
+  border: none;
   border-radius: 26px;
+  border: 4px solid #FFCBD8;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   text-align: center;
 	text-decoration: none;
@@ -70,7 +71,7 @@ body {
 }
 
 .main-style-button:hover {
-  background-color: #FFCBD8;;
+  background-color: #FFCBD8;
   border: 4px solid #FCFCFC;
 }
 
@@ -91,15 +92,14 @@ body {
 
 
 .second-style-button {
-  display: block;
-  padding: 12px 32px;
+  padding: 8px 28px;
   font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	color: #FCFCFC;
   border-radius: 26px;
-  border: 4px solid  #FFCBD8 ;
+  border: 4px solid #FFCBD8;
 	text-decoration: none;
   background-color: #FF2F64;
 
@@ -390,16 +390,23 @@ body {
 
 .input-search {
   flex-grow: 1;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
   cursor: pointer;
+
 }
 
 .input-search::placeholder {
   color: #B9B9B9;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .input-search:hover {
@@ -416,6 +423,33 @@ body {
   background-color: #B9B9B9;
 }
 
+.input-search-clean {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  top: 40px;
+  right: 29px;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.close-cross {
+  fill: #B9B9B9;
+}
+
+.input-search:not(:placeholder-shown) + .input-search-clean {
+  display: block;
+}
+
+.input-search-clean:hover .close-cross {
+  fill: #242424;
+}
+
 .account-popover {
   width: 420px;
   box-sizing: border-box;
@@ -423,7 +457,7 @@ body {
   flex-direction: column;
   padding: 48px;
   position: absolute;
-  left: -335px;
+  right: 2px;
   top: 40px;
   background-color: #FCFCFC;
   border-radius: 4px;
@@ -435,20 +469,24 @@ body {
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+  "login-field login-field"
+  "password-field password-field"
+  "login-button login-links-wrapper";
 }
 
 
 .login-links-wrapper {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: 184px;
-  top: 252px;
+  justify-content: center;
+  grid-area: "login-links-wrapper";
+  margin-left: 19px;
 }
 
 .popover-name {
+  color: #242424;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -460,10 +498,16 @@ body {
   padding: 14px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .account-input::placeholder {
   color: #B9B9B9;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .account-input:hover {
@@ -480,21 +524,31 @@ body {
   background-color: #565C66;
 }
 
-.login-field { 
+.login-field {
   margin-bottom: 12px;
+  grid-area: "login-field";
+  grid-column: span 2;
 }
 
 .password-field {
   margin-bottom: 32px;
+  grid-area: "password-field";
+  grid-column: span 2;
 }
 
 .login-button {
   align-self: flex-start;
+  grid-area: "login-button";
 }
 
 .login-help-link {
   line-height: 20px;
+  font-size: 14px;
   color: #2D3440;
+}
+
+.login-help-link:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .login-help-link:hover {
@@ -536,11 +590,15 @@ body {
   z-index: 2;
 }
 
-.basket-popover-off {
+.basket-popover-off,
+.filled-basket-off {
   display: none;
 }
 
+
+
 .empty-basket {
+  color: #242424;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -548,6 +606,7 @@ body {
 }
 
 .basket-name {
+  color: #242424;
   margin: 0;
   margin-bottom: 32px;
   text-align: left;
@@ -600,6 +659,7 @@ body {
 }
 
 .basket-ice-name {
+  color: #242424;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -616,6 +676,7 @@ body {
 }
 
 .basket-price {
+  color: #242424;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -629,6 +690,7 @@ body {
 }
 
 .basket-total-price {
+  color: #242424;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -1453,11 +1515,15 @@ body {
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   cursor: pointer;
 }
 
 .delivery-field::placeholder {
   color: #B9B9B9;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .delivery-field:hover {
@@ -1567,6 +1633,9 @@ body {
 
 .who-did-description {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #242424;
 }
 
 .footer-link {
@@ -1591,7 +1660,13 @@ body {
 }
 
 .developer-link {
+  display: inline-block;
   color: #2D3440;
+}
+
+.who-did-description .developer-link {
+  border-bottom: 1px solid #565C66;
+  text-decoration: none;
 }
 
 .developer-logo:hover {
@@ -1628,7 +1703,7 @@ body {
   padding-bottom: 66px;
   padding-right: 64px;
   padding-left: 64px;
-} 
+}
 
 .modal-close-button {
   position: absolute;
