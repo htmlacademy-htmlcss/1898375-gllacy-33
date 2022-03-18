@@ -20,9 +20,12 @@
 }
 
 /* GLOBAL VALUES */
+html {
+  height: 100%;
+}
 
 body {
-  max-height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -55,7 +58,7 @@ body {
 }
 
 .main-style-button	{
-  padding: 8px 28px;
+  padding: 12px 32px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
@@ -92,7 +95,7 @@ body {
 
 
 .second-style-button {
-  padding: 8px 28px;
+  padding: 12px 32px;
   font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
@@ -151,6 +154,10 @@ body {
 }
 
 /* MAIN HEADER */
+
+.index-page {
+  margin-top: 21px;
+}
 
 .main-navigation {
   display: flex;
@@ -1044,10 +1051,14 @@ body {
   line-height: 30px;
   color: #2D3440;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .gift-description {
+  margin: 0;
   color: #2D3440;
+  white-space: pre-line;
+  margin-bottom: 32px;
 }
 
 /* SHOP POPULAR ITEMS (CATALOG CARDS)*/
@@ -1072,7 +1083,7 @@ body {
   position: relative;
   width: 270px;
   display: flex;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   flex-direction: column;
   justify-content: flex-end;
   background-color: #FCFCFC;
@@ -1177,7 +1188,7 @@ body {
 
 .shop-benefits {
   margin-bottom: 80px;
-  padding: 20px;
+  padding: 24px;
   background-image: url("../images/backgrounds/waffle-field.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1262,6 +1273,7 @@ body {
 
 .news-description {
   margin: 0;
+  white-space: pre-line;
 }
 
 .subscription {
@@ -1276,7 +1288,7 @@ body {
 }
 
 .subscription-wrapper {
-  padding: 24px;
+  padding: 25px 24px;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
@@ -1405,6 +1417,7 @@ body {
   grid-area: form-description;
   margin: 0;
   margin-bottom: 32px;
+  white-space: pre-line;
 }
 
 .delivery-form-label {
@@ -1548,13 +1561,15 @@ body {
   background-image: url("../images/backgrounds/requisites-field.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  background-size: cover;
   border-radius: 16px;
 }
 
 .requisites-wrapper {
   width: 343px;
+  box-sizing: border-box;
   background-color: #FCFCFC;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 40px;
   margin-right: auto;
 }
@@ -1562,10 +1577,13 @@ body {
 .requisites-description {
   margin: 0;
   margin-bottom: 12px;
+  white-space: pre-line;
 }
 
 .time-description {
   margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .adress-link {
@@ -1596,17 +1614,20 @@ body {
 }
 
 .footer-list {
-  margin: 0;
-  margin-right: 120px;
-  margin-left: 299px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto  ;
+  margin-left: 320px;
+  display: grid;
+  grid-template-columns: 162px 182px;
   padding: 0;
 }
 
 .footer-item:first-child {
   position: relative;
   margin-right: 24px;
+}
+
+.footer-item {
+  white-space: nowrap;
 }
 
 .footer-item:first-child::before {
@@ -1629,6 +1650,10 @@ body {
 
 .about-developer {
   white-space: nowrap;
+}
+
+.about-developer .developer-link:first-of-type  {
+  margin-bottom: 9px;
 }
 
 .who-did-description {
@@ -1675,6 +1700,7 @@ body {
 
 .developer-link:hover {
   color: #FCFCFC;
+  border-color: #FCFCFC;
 }
 
 .developer-link:focus {
@@ -1799,6 +1825,10 @@ body {
 }
 
 /*CATALOG HEADER*/
+
+.catalog-inner-page {
+  margin-top: 32px;
+}
 
 .inner-page-header {
   margin-bottom: 40px;
