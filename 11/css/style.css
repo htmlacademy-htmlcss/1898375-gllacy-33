@@ -20,9 +20,12 @@
 }
 
 /* GLOBAL VALUES */
+html {
+  height: 100%;
+}
 
 body {
-  max-height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -55,14 +58,15 @@ body {
 }
 
 .main-style-button	{
-  display: block;
   padding: 12px 32px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 20px;
 	color: #2D3440;
-  border: 4px solid #FFCBD8;
+  box-sizing: border-box;
+  border: none;
   border-radius: 26px;
+  border: 4px solid #FFCBD8;
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   text-align: center;
 	text-decoration: none;
@@ -70,7 +74,7 @@ body {
 }
 
 .main-style-button:hover {
-  background-color: #FFCBD8;;
+  background-color: #FFCBD8;
   border: 4px solid #FCFCFC;
 }
 
@@ -91,7 +95,6 @@ body {
 
 
 .second-style-button {
-  display: block;
   padding: 12px 32px;
   font-family: inherit;
 	font-weight: 700;
@@ -99,7 +102,7 @@ body {
 	line-height: 20px;
 	color: #FCFCFC;
   border-radius: 26px;
-  border: 4px solid  #FFCBD8 ;
+  border: 4px solid #FFCBD8;
 	text-decoration: none;
   background-color: #FF2F64;
 
@@ -151,6 +154,10 @@ body {
 }
 
 /* MAIN HEADER */
+
+.index-page {
+  margin-top: 21px;
+}
 
 .main-navigation {
   display: flex;
@@ -390,16 +397,23 @@ body {
 
 .input-search {
   flex-grow: 1;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 16px;
   cursor: pointer;
+
 }
 
 .input-search::placeholder {
   color: #B9B9B9;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .input-search:hover {
@@ -416,6 +430,33 @@ body {
   background-color: #B9B9B9;
 }
 
+.input-search-clean {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  top: 40px;
+  right: 29px;
+  width: 16px;
+  height: 16px;
+  background-color: #FCFCFC;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.close-cross {
+  fill: #B9B9B9;
+}
+
+.input-search:not(:placeholder-shown) + .input-search-clean {
+  display: block;
+}
+
+.input-search-clean:hover .close-cross {
+  fill: #242424;
+}
+
 .account-popover {
   width: 420px;
   box-sizing: border-box;
@@ -423,7 +464,7 @@ body {
   flex-direction: column;
   padding: 48px;
   position: absolute;
-  left: -335px;
+  right: 2px;
   top: 40px;
   background-color: #FCFCFC;
   border-radius: 4px;
@@ -435,20 +476,24 @@ body {
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+  "login-field login-field"
+  "password-field password-field"
+  "login-button login-links-wrapper";
 }
 
 
 .login-links-wrapper {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  left: 184px;
-  top: 252px;
+  justify-content: center;
+  grid-area: "login-links-wrapper";
+  margin-left: 19px;
 }
 
 .popover-name {
+  color: #242424;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -460,10 +505,16 @@ body {
   padding: 14px 16px;
   border: 1px solid #B9B9B9;
   border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .account-input::placeholder {
   color: #B9B9B9;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .account-input:hover {
@@ -480,21 +531,31 @@ body {
   background-color: #565C66;
 }
 
-.login-field { 
+.login-field {
   margin-bottom: 12px;
+  grid-area: "login-field";
+  grid-column: span 2;
 }
 
 .password-field {
   margin-bottom: 32px;
+  grid-area: "password-field";
+  grid-column: span 2;
 }
 
 .login-button {
   align-self: flex-start;
+  grid-area: "login-button";
 }
 
 .login-help-link {
   line-height: 20px;
+  font-size: 14px;
   color: #2D3440;
+}
+
+.login-help-link:not(:last-child) {
+  margin-bottom: 4px;
 }
 
 .login-help-link:hover {
@@ -536,11 +597,15 @@ body {
   z-index: 2;
 }
 
-.basket-popover-off {
+.basket-popover-off,
+.filled-basket-off {
   display: none;
 }
 
+
+
 .empty-basket {
+  color: #242424;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -548,6 +613,7 @@ body {
 }
 
 .basket-name {
+  color: #242424;
   margin: 0;
   margin-bottom: 32px;
   text-align: left;
@@ -600,6 +666,7 @@ body {
 }
 
 .basket-ice-name {
+  color: #242424;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -616,6 +683,7 @@ body {
 }
 
 .basket-price {
+  color: #242424;
   margin: 0;
   font-weight: 700;
   font-size: 18px;
@@ -629,6 +697,7 @@ body {
 }
 
 .basket-total-price {
+  color: #242424;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -982,10 +1051,14 @@ body {
   line-height: 30px;
   color: #2D3440;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .gift-description {
+  margin: 0;
   color: #2D3440;
+  white-space: pre-line;
+  margin-bottom: 32px;
 }
 
 /* SHOP POPULAR ITEMS (CATALOG CARDS)*/
@@ -1010,7 +1083,7 @@ body {
   position: relative;
   width: 270px;
   display: flex;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   flex-direction: column;
   justify-content: flex-end;
   background-color: #FCFCFC;
@@ -1115,7 +1188,7 @@ body {
 
 .shop-benefits {
   margin-bottom: 80px;
-  padding: 20px;
+  padding: 24px;
   background-image: url("../images/backgrounds/waffle-field.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -1200,6 +1273,7 @@ body {
 
 .news-description {
   margin: 0;
+  white-space: pre-line;
 }
 
 .subscription {
@@ -1214,7 +1288,7 @@ body {
 }
 
 .subscription-wrapper {
-  padding: 24px;
+  padding: 25px 24px;
   background-color: #FCFCFC;
   border-radius: 16px;
 }
@@ -1343,6 +1417,7 @@ body {
   grid-area: form-description;
   margin: 0;
   margin-bottom: 32px;
+  white-space: pre-line;
 }
 
 .delivery-form-label {
@@ -1453,11 +1528,15 @@ body {
   border: 1px solid #B9B9B9;
   border-radius: 4px;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
   cursor: pointer;
 }
 
 .delivery-field::placeholder {
   color: #B9B9B9;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .delivery-field:hover {
@@ -1482,13 +1561,15 @@ body {
   background-image: url("../images/backgrounds/requisites-field.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  background-size: cover;
   border-radius: 16px;
 }
 
 .requisites-wrapper {
   width: 343px;
+  box-sizing: border-box;
   background-color: #FCFCFC;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 40px;
   margin-right: auto;
 }
@@ -1496,10 +1577,13 @@ body {
 .requisites-description {
   margin: 0;
   margin-bottom: 12px;
+  white-space: pre-line;
 }
 
 .time-description {
   margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .adress-link {
@@ -1530,17 +1614,20 @@ body {
 }
 
 .footer-list {
-  margin: 0;
-  margin-right: 120px;
-  margin-left: 299px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto  ;
+  margin-left: 320px;
+  display: grid;
+  grid-template-columns: 162px 182px;
   padding: 0;
 }
 
 .footer-item:first-child {
   position: relative;
   margin-right: 24px;
+}
+
+.footer-item {
+  white-space: nowrap;
 }
 
 .footer-item:first-child::before {
@@ -1565,8 +1652,15 @@ body {
   white-space: nowrap;
 }
 
+.about-developer .developer-link:first-of-type  {
+  margin-bottom: 9px;
+}
+
 .who-did-description {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #242424;
 }
 
 .footer-link {
@@ -1591,7 +1685,13 @@ body {
 }
 
 .developer-link {
+  display: inline-block;
   color: #2D3440;
+}
+
+.who-did-description .developer-link {
+  border-bottom: 1px solid #565C66;
+  text-decoration: none;
 }
 
 .developer-logo:hover {
@@ -1600,6 +1700,7 @@ body {
 
 .developer-link:hover {
   color: #FCFCFC;
+  border-color: #FCFCFC;
 }
 
 .developer-link:focus {
@@ -1628,7 +1729,7 @@ body {
   padding-bottom: 66px;
   padding-right: 64px;
   padding-left: 64px;
-} 
+}
 
 .modal-close-button {
   position: absolute;
@@ -1724,6 +1825,10 @@ body {
 }
 
 /*CATALOG HEADER*/
+
+.catalog-inner-page {
+  margin-top: 32px;
+}
 
 .inner-page-header {
   margin-bottom: 40px;
