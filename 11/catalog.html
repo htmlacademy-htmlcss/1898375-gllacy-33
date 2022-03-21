@@ -55,7 +55,7 @@
             </svg>
             <span class="visually-hidden">Поиск по магазину</span>
           </a>
-          <div class="popover-search search-popover-off">
+          <div class="search-popover search-popover-off">
             <input  class="input-search" placeholder="Поиск по сайту" type="search" >
           </div>
         </li>
@@ -72,12 +72,14 @@
             <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
               <input class="account-input login-field" placeholder="email@example.com" type="email" name="login-email">
               <input class="account-input password-field" placeholder="Пароль" type="password" name="login-password">
-              <button class="login-button second-style-button" type="submit">Войти</button>
+              <div class="account-popover-footer">
+                <button class="login-button second-style-button" type="submit">Войти</button>
+                <div class="login-links-wrapper">
+                  <a class="login-help-link" href="#">Забыли пароль?</a>
+                  <a class="login-help-link" href="#">Регистрация</a>
+                </div>
+              </div>
             </form>
-            <div class="login-links-wrapper">
-              <a class="login-help-link" href="#">Забыли пароль</a>
-              <a class="login-help-link" href="#">Регистрация</a>
-            </div>
           </div>
         </li>
         <li class="user-item">
@@ -89,34 +91,36 @@
             2 товара
           </a>
           <div class="filled-basket-popover filled-basket-off">
-            <h2 class="basket-name">Корзина</h2>
-            <ul class="basket-list">
-              <li class="basket-item">
-                <img class="basket-ice-ball" width="46" height="46" src="images/basket-ice-ball/basket-raspberry-ball.jpg" alt="шар малинового мороженного">
-                <div class="inner-basket-wrapper">
-                  <p class="basket-ice-name">Малинка</p>
-                  <span class="kg-and-price">1 кг x 310 ₽</span>
+            <div class="filled-basket-wrapper">
+              <h2 class="basket-name">Корзина</h2>
+              <ul class="basket-list">
+                <li class="basket-item">
+                  <img class="basket-ice-ball" width="46" height="46" src="images/basket-ice-ball/basket-raspberry-ball.jpg" alt="шар малинового мороженного">
+                  <div class="inner-basket-wrapper">
+                    <p class="basket-ice-name">Малинка</p>
+                    <span class="kg-and-price">1 кг x 310 ₽</span>
+                  </div>
+                  <p class="basket-price">310 ₽</p>
+                  <button class="delet-from-busket-button" type="button">
+                    <span class="visually-hidden">удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="basket-item">
+                  <img class="basket-ice-ball" width="46" height="46" src="images/basket-ice-ball/basket-buble-gum-ball.jpg" alt="шар мороженного бабл-гам">
+                  <div class="inner-basket-wrapper">
+                    <p class="basket-ice-name">Бабл-гам</p>
+                    <span class="kg-and-price">1,5 кг x 320 ₽</span>
+                  </div>
+                  <p class="basket-price">480 ₽</p>
+                  <button class="delet-from-busket-button" type="button">
+                    <span class="visually-hidden">удалить из корзины</span>
+                  </button>
+                </li>
+                <div class="basket-footer-wrapper">
+                  <a class="basket-order-button second-style-button" href="#" >Оформить заказ</a>
+                  <span class="basket-total-price">Итого: 790 ₽</span>
                 </div>
-                <p class="basket-price">310 ₽</p>
-                <button class="delet-from-busket-button" type="button">
-                  <span class="visually-hidden">удалить из корзины</span>
-                </button>
-              </li>
-              <li class="basket-item">
-                <img class="basket-ice-ball" width="46" height="46" src="images/basket-ice-ball/basket-buble-gum-ball.jpg" alt="шар мороженного бабл-гам">
-                <div class="inner-basket-wrapper">
-                  <p class="basket-ice-name">Малинка</p>
-                  <span class="kg-and-price">1 кг x 310 ₽</span>
-                </div>
-                <p class="basket-price">310 ₽</p>
-                <button class="delet-from-busket-button" type="button">
-                  <span class="visually-hidden">удалить из корзины</span>
-                </button>
-              </li>
-              <div class="basket-footer-wrapper">
-                <a class="basket-order-button second-style-button" href="#" >Оформить заказ</a>
-                <span class="basket-total-price">Итого: 790 ₽</span>
-              </div>
+            </div>
             </ul>
           </div>
         </li>
@@ -158,7 +162,7 @@
           <legend class="visually-hidden">Фильтр цены</legend>
           <div class="range-wrapper-inputs">
             <label class="range-label">
-               Цена <input class="range-input" type="number" value="100" name="min-price">
+               Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽
                - <input class="range-input" type="number" value="500" name="max-price"> ₽
             </label>
           </div>
@@ -282,7 +286,8 @@
           <h3 class="ice-cream-item-name">Черника</h3>
           <img class="ice-cream-ball" src="images/ice-ball/blueberry-ball.jpg" width="168" height="168"
             alt="шар мороженного Черника">
-          <p class="catalog-item-description">Крем-брюле с черничным джемом</p>
+          <p class="catalog-item-description">Крем-брюле 
+          с черничным джемом</p>
           <div class="price-wrapper">
             <p class="price">330 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -296,7 +301,8 @@
           <h3 class="ice-cream-item-name">Бабл-гам</h3>
           <img class="ice-cream-ball" src="images/ice-ball/buble-gum-ball.jpg" width="168" height="168"
             alt="шар мороженного Бабл-гам">
-          <p class="catalog-item-description">Ванильный пломбир со сладкой посыпкой</p>
+          <p class="catalog-item-description">Ванильный пломбир 
+          со сладкой посыпкой</p>
           <div class="price-wrapper">
             <p class="price">320 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -310,7 +316,8 @@
           <h3 class="ice-cream-item-name">Ежевика</h3>
           <img class="ice-cream-ball" src="images/ice-ball/blackberry-ball.jpg" width="168" height="168"
             alt="шар мороженного Ежевика">
-          <p class="catalog-item-description">Сливочное мороженое с ежевичным джемом</p>
+          <p class="catalog-item-description">Сливочное мороженое 
+          с ежевичным джемом</p>
           <div class="price-wrapper">
             <p class="price">330 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -324,7 +331,8 @@
           <h3 class="ice-cream-item-name">Банан</h3>
           <img class="ice-cream-ball" src="images/ice-ball/banana-ball.jpg" width="168" height="168"
             alt="шар мороженного Банан">
-          <p class="catalog-item-description">Сливочный пломбир с банановым вкусом</p>
+          <p class="catalog-item-description">Сливочный пломбир 
+          с банановым вкусом</p>
           <div class="price-wrapper">
             <p class="price">340 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -352,7 +360,8 @@
           <h3 class="ice-cream-item-name">Клубничка</h3>
           <img class="ice-cream-ball" src="images/ice-ball/strawberry-ball.jpg" width="168" height="168"
             alt="шар мороженного Клубничка">
-          <p class="catalog-item-description">Сливочный пломбир с клубничным вкусом</p>
+          <p class="catalog-item-description">Сливочный пломбир 
+          с клубничным вкусом</p>
           <div class="price-wrapper">
             <p class="price">300 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -380,7 +389,8 @@
           <h3 class="ice-cream-item-name">Ментол</h3>
           <img class="ice-cream-ball" src="images/ice-ball/menthol-ball.jpg" width="168" height="168"
             alt="шар мороженного Ментол">
-          <p class="catalog-item-description">Сливочный пломбир с ментоловым сиропом</p>
+          <p class="catalog-item-description">Сливочный пломбир 
+          с ментоловым сиропом</p>
           <div class="price-wrapper">
             <p class="price">320 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -394,7 +404,8 @@
           <h3 class="ice-cream-item-name">Орешек</h3>
           <img class="ice-cream-ball" src="images/ice-ball/nutt-ball.jpg" width="168" height="168"
             alt="шар мороженного Орешек">
-          <p class="catalog-item-description">Фисташковый пломбир с шоколадным сиропом</p>
+          <p class="catalog-item-description">Фисташковый пломбир 
+          с шоколадным сиропом</p>
           <div class="price-wrapper">
             <p class="price">360 ₽/кг</p>
             <a class="basket-thumb" href="#">
@@ -487,10 +498,10 @@
         </a>
       </li>
       <li class="footer-item">
-        <a class="footer-link" href="#">О производстве</a>
+        <a class="footer-link" href="#">Наши документы</a>
       </li>
       <li class="footer-item">
-        <a class="footer-link" href="#">Наши документы</a>
+        <a class="footer-link" href="#">О производстве</a>
       </li>
       <li class="footer-item">
         <a class="footer-link" href="#">Экологические стандарты</a>
