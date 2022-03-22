@@ -1134,12 +1134,15 @@ body {
   margin: 0;
   margin-bottom: 8px;
   padding-top: 133px;
+  padding-left: 40px;
+  padding-right: 40px;
   align-self: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
   order: 2;
+  word-break: break-all;
 }
 
 .ice-cream-ball {
@@ -1167,15 +1170,18 @@ body {
   align-items: center;
   justify-content: center;
   order: 4;
+  padding: 0 40px;
 }
 
 .price {
   margin: 0;
+  margin-right: auto;
+  max-width: 150px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #2D3440;
-  margin-right: 70px;
+  word-break: break-all;
 }
 
 .basket-thumb {
@@ -1228,6 +1234,7 @@ body {
   padding: 24px;
   background-image: url("../images/backgrounds/waffle-field.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1315,6 +1322,7 @@ body {
 }
 
 .subscription {
+  width: 570px;
   display: flex;
   padding: 6px;
   box-sizing: border-box;
@@ -1326,6 +1334,7 @@ body {
 }
 
 .subscription-wrapper {
+  width: 570px;
   padding-top: 26px;
   padding-right: 24px;
   padding-bottom: 26px;
@@ -1395,17 +1404,22 @@ body {
   background-image: url("../images/backgrounds/delivery-field.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
+  background-size: cover;
   border-radius: 16px;
 }
 
 .delivery-description-wrapper {
-  width: 371px;
-  margin-right: 135px;
-  margin-left: 100px;
+  width: 400px;
+  margin-top: 157px;
+  margin-bottom: 153px;
+  margin-right: 115px;
+  margin-left: 90px;
 }
 
 .delivery-description {
   margin: 0;
+  padding: 10px;
+  white-space: pre-line;
 }
 
 .delivery-form {
@@ -1570,12 +1584,13 @@ body {
 }
 
 .delivery-title{
+  margin: 0;
+  margin-bottom:4px;
+  padding: 10px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 .delivery-field-name {
@@ -1685,10 +1700,6 @@ body {
 
 .footer-item:first-child {
   position: relative;
-}
-
-.footer-item {
-  white-space: nowrap;
 }
 
 .footer-item:first-child::before {
@@ -1996,6 +2007,7 @@ body {
 }
 
 .filter-title {
+  max-width: 196px;
   margin: 0;
   margin-bottom: 8px;
   margin-left: 15px;
@@ -2071,6 +2083,7 @@ body {
   align-items: center;
   font-size: 14px;
   line-height: 20px;
+  cursor: pointer;
 }
 
 .range-input {
@@ -2083,6 +2096,7 @@ body {
   appearance: textfield;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .range-input::-webkit-outer-spin-button,
