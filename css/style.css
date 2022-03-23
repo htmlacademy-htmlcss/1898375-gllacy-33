@@ -2219,7 +2219,7 @@ body {
   cursor: pointer;
 }
 
-.fat-input:not(:checked) + .fat-label::before {
+.fat-input + .fat-label::before {
   content: "";
   display: block;
   width: 16px;
