@@ -82,7 +82,7 @@ body {
 .main-style-button:focus {
   outline: 0;
   background-color: #ffffff;
-  border: 4px solid d;
+  border: 4px solid #2d3440;
 }
 
 .main-style-button:active {
@@ -195,7 +195,7 @@ body {
 }
 
 .navigation-logo:focus {
-  outline: 2px solid d;
+  outline: 2px solid #2d3440;
 }
 
 .navigation-logo:active {
@@ -254,7 +254,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: d;
+  color: #2d3440;
   padding: 6px 16px;
 }
 
@@ -297,7 +297,7 @@ body {
   line-height: 20px;
   text-align: center;
   padding: 8px 16px;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
 }
 
@@ -308,7 +308,7 @@ body {
 
 .navigation-button:focus {
   outline-offset: 0;
-  outline: 2px solid d;
+  outline: 2px solid #2d3440;
   border-radius: 26px;
   background-color: rgba(252, 252, 252, 0.5);
 }
@@ -326,7 +326,7 @@ body {
   position: relative;
   font-size: 14px;
   line-height: 20px;
-  color: d;
+  color: #2d3440;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 16px;
   text-decoration: none;
@@ -422,16 +422,16 @@ body {
 }
 
 .input-search:hover {
-  border-color: d;
+  border-color: #2d3440;
 }
 
 .input-search:focus {
-  border-color: d;
-  outline: 1px solid d;
+  border-color: #2d3440;
+  outline: 1px solid #2d3440;
 }
 
 .input-search:disabled {
-  color: d;
+  color: #2d3440;
   background-color: #b9b9b9;
 }
 
@@ -529,12 +529,12 @@ body {
 }
 
 .account-input:hover {
-  border-color: d;
+  border-color: #2d3440;
 }
 
 .account-input:focus {
-  border-color: d;
-  outline: 1px solid d;
+  border-color: #2d3440;
+  outline: 1px solid #2d3440;
   outline-offset: 0;
 }
 
@@ -563,7 +563,7 @@ body {
 .login-help-link {
   line-height: 20px;
   font-size: 14px;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
   border-bottom: 1px solid #242424;
 }
@@ -728,7 +728,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
   border-radius: 26px;
 }
@@ -851,7 +851,7 @@ body {
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
-  color: d;
+  color: #2d3440;
   white-space: pre-line;
 }
 
@@ -860,7 +860,7 @@ body {
   margin-bottom: 48px;
   font-size: 18px;
   line-height: 24px;
-  color: d;
+  color: #2d3440;
   white-space: pre-line;
 }
 
@@ -966,12 +966,12 @@ body {
 }
 
 .ice-cream-pagination-link:focus {
-  outline: 1px solid d;
+  outline: 1px solid #2d3440;
   outline-offset: -1px;
 }
 
 .ice-cream-pagination-link:active {
-  outline: 1px solid d;
+  outline: 1px solid #2d3440;
   outline-offset: -1px;
   background-color: #ff2f64;
 }
@@ -999,14 +999,14 @@ body {
 }
 
 .social-link:hover {
-  background-color: d;
+  background-color: #2d3440;
   /* outline: 1px solid #fcfcfc;
   outline-offset: -3px; */
 }
 
 .social-link:focus {
-  background-color: d;
-  border-color: d;
+  background-color: #2d3440;
+  border-color: #2d3440;
   outline: none;
 }
 
@@ -1068,7 +1068,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: d;
+  color: #2d3440;
   white-space: pre-line;
 }
 
@@ -1076,14 +1076,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: d;
+  color: #2d3440;
   margin: 0;
   margin-bottom: 16px;
 }
 
 .gift-description {
   margin: 0;
-  color: d;
+  color: #2d3440;
   white-space: pre-line;
   margin-bottom: 32px;
 }
@@ -1132,7 +1132,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: d;
+  color: #2d3440;
   order: 2;
   word-break: break-all;
 }
@@ -1172,7 +1172,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: d;
+  color: #2d3440;
   word-break: break-all;
 }
 
@@ -1265,7 +1265,7 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
-  color: d;
+  color: #2d3440;
   margin: 0;
   margin-bottom: 56px;
 }
@@ -1304,7 +1304,7 @@ body {
   font-size: 24px;
   line-height: 30px;
   text-decoration: none;
-  color: d;
+  color: #2d3440;
 }
 
 .news-description {
@@ -1485,7 +1485,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: d;
+  color: #2d3440;
   margin-bottom: 8px;
 }
 
@@ -1583,7 +1583,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: d;
+  color: #2d3440;
 }
 
 .delivery-field-name {
@@ -1662,7 +1662,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
   white-space: pre-line;
 }
@@ -1730,7 +1730,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
 }
 
@@ -1749,7 +1749,7 @@ body {
 
 .developer-link {
   display: inline-block;
-  color: d;
+  color: #2d3440;
 }
 
 .who-did-description .developer-link {
@@ -1925,7 +1925,7 @@ body {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  color: d;
+  color: #2d3440;
 }
 
 
@@ -1964,7 +1964,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: d;
+  color: #2d3440;
   text-decoration: underline;
 }
 
@@ -1992,7 +1992,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: d;
+  color: #2d3440;
 }
 
 .field-border-off {
@@ -2122,7 +2122,7 @@ body {
   position: absolute;
   height: 2px;
   margin: 0;
-  background-color: d;
+  background-color: #2d3440;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -2136,7 +2136,7 @@ body {
   height: 16px;
   padding: 0;
   border-width: 0;
-  background-color: d;
+  background-color: #2d3440;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -2170,20 +2170,20 @@ body {
 }
 
 .range-toggle:active {
-  background-color: d;
+  background-color: #2d3440;
   outline: none;
 }
 
 .range-toggle:hover .toggle-center-marker {
-  background-color: d;
+  background-color: #2d3440;
 }
 
 .range-toggle:focus .toggle-center-marker {
-  background-color: d;
+  background-color: #2d3440;
 }
 
 .range-toggle:active .toggle-center-marker {
-  background-color: d;
+  background-color: #2d3440;
 }
 
 .fat-list {
@@ -2226,7 +2226,7 @@ body {
   height: 16px;
   box-sizing: border-box;
   border-radius: 50%;
-  border: 1.5px solid d;
+  border: 1.5px solid #2d3440;
   margin-right: 8px;
   align-self: center;
 }
@@ -2237,8 +2237,8 @@ body {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  border: 2px solid d;
-  background-color: d;
+  border: 2px solid #2d3440;
+  background-color: #2d3440;
   left: 5px;
   top: 7px;
 }
@@ -2335,7 +2335,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: d;
+  color: #2d3440;
   cursor: pointer;
 }
 
@@ -2345,7 +2345,7 @@ body {
 }
 
 .filters-button:focus {
-  border-color: d;
+  border-color: #2d3440;
   outline: none;
 }
 
@@ -2415,7 +2415,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: d;
+  color: #2d3440;
   text-decoration: none;
   cursor: pointer;
 }
@@ -2440,7 +2440,7 @@ body {
 .pagination-link:focus {
   background-color: #ffcbd8;
   border-radius: 50%;
-  outline: 1px solid d;
+  outline: 1px solid #2d3440;
   outline-offset: -1px;
 }
 
