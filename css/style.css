@@ -2296,14 +2296,15 @@ body {
 }
 
 .filler-input:not(:checked) + .filler-label::before {
+  margin-right: 8px;
   content: url("../images/icons/empty-checkbox.svg");
   width: 16px;
   height: 16px;
-  margin-right: 8px;
   align-self: center;
 }
 
 .filler-input:checked + .filler-label::before {
+  margin-right: 8px;
   content: url("../images/icons/filled-checkbox.svg");
   width: 16px;
   height: 16px;
