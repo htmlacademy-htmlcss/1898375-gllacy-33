@@ -353,6 +353,10 @@ body {
   fill: #242424;
 }
 
+.circle-search {
+  fill: #242424;
+}
+
 .header-search {
   width: 32px;
   height: 32px;
